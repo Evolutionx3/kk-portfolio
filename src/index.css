@@ -113,6 +113,7 @@ body {
         @apply text-typography font-semibold;
         font-size: 2.8125rem;
         line-height: 112%;
+        width: 277px;
     }
 
     .testimonials_text_featured {
