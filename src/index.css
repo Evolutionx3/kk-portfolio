@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: 'Titillium Web', sans-serif;
+    color: #F8FAFC;
+  }
+
+body {
+    background-color: #080808;
+}
+
+@layer components {
+    .hero_big_text {
+        @apply font-bold uppercase;
+        font-size: 6.125rem;
+        letter-spacing: 0.1225rem;
+        line-height: 91.6%;
+        -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .hero_medium_text {
+        @apply font-bold uppercase mb-1;
+        font-size: 4.625rem;
+        letter-spacing: 0.0925rem;
+        line-height: 91.6%;
+    }
+    
+    .hero_small_text {
+        font-size: 1.0625rem;
+        line-height: 122%;
+        padding-left: 5px
+    }
+
+    .hero_slash {
+        font-weight: 400;
+        color: #6659EF
+    }
+
+    .hero_bg_dots, .testimonials {
+        background: url(bg_hero_mobile.png);
+    }
+
+    .nav_gradient {
+        background: linear-gradient(180deg, #060606 37.02%, rgba(6, 6, 6, 0.53) 78.99%, rgba(6, 6, 6, 0.00) 100%);
+    }
+
+    .my_mission_section {
+        padding: 78px 22px;
+        background: linear-gradient(180deg, #F7F7FC 0%, #F5F4F9 60.94%, #E2E2E5 100%);
+    }
+
+    .section_title {
+        @apply text-xl font-semibold capitalize;
+        background: linear-gradient(90deg, rgba(78, 65, 209, 0.85) 0%, #6659EF 26.04%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .my_mission_quote {
+        @apply font-semibold;
+        line-height: 112%;
+        font-size: 2.8125rem;
+    }
+
+    .my_mission_text {
+        @apply text-xl;
+        line-height: 122%;
+        color: #363639;
+        opacity: 0.9;
+    }
+
+    .projects_wrapper {
+        @apply flex flex-col py-12 gap-y-12 px-5;
+        background: linear-gradient(180deg, #141415 0%, #101014 100%);
+    }
+
+    .badge {
+        @apply absolute top-2 text-typography font-semibold  uppercase py-2 px-1.5;
+        background: #060606;
+        font-size: 0.875rem;
+        line-height: 100%;
+    }
+
+    .project {
+        @apply pb-6 border-b;
+        border-color: rgba(248, 250, 252, .13);
+    }
+
+    .project_title {
+        @apply font-semibold uppercase;
+        font-size: 3.25rem;
+        line-height: 100%;
+        background: linear-gradient(90deg, rgba(248, 250, 252, 0.90) 0%, #F8FAFC 89.60%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .testimonials_wrapper, .socials_wrapper {
+        @apply flex flex-col;
+        padding-top: 78px;
+    }
+
+    .testimonials {
+        @apply px-5 gap-y-9 flex flex-col;
+    }
+
+    .testimonials_text {
+        @apply text-typography font-semibold;
+        font-size: 2.8125rem;
+        line-height: 112%;
+    }
+
+    .testimonials_text_featured {
+        background: var(--text-gradient, linear-gradient(90deg, rgba(78, 65, 209, 0.85) 0%, #6659EF 26.04%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .carousel_next {
+        @apply w-10 h-16 flex justify-center items-center;
+        border-radius: 0.09094rem;
+        background: linear-gradient(90deg, rgba(46, 29, 157, 0.22) 0%, rgba(46, 29, 157, 0.83) 57.44%, #2E1D9D 100%);
+    }
+    
+    .mentors_info_wrapper {
+        @apply -mt-8
+    }
+
+    .mentors_info {
+        @apply -ml-5 flex;
+        width: 186px;
+        font-size: 14px;
+    }
+
+    .mentor_img {
+        width: 199px;
+        height: 222px;
+        max-width: 199px;
+    }
+
+    .mentoring_button_wrapper {
+        background: linear-gradient(90deg, rgba(46, 29, 157, 0.24) 0%, rgba(46, 29, 157, 0.60) 11.41%, rgba(46, 29, 157, 0.90) 63.65%, #2E1D9D 100%);
+    }
+
+    .mentoring_button {
+        @apply text-xl font-semibold uppercase;
+        line-height: 100%;
+    }
+
+    .social_button_wrapper {
+        @apply border-b;
+        border-bottom-color: #fcfcfc2b;
+    }
+
+    .social_button {
+        @apply font-semibold uppercase;
+        opacity: 0.85;
+        font-size: 3.325rem;
+        line-height: 82%;
+    }
+
+    .footer-text {
+        @apply uppercase text-center py-4;
+        font-size: 0.75rem;
+        color: #535353;
+    }
+
+    .back_to_top {
+        @apply pb-10;
+        opacity: 0.5
+    }
+}
+
+
+
+
+
+
