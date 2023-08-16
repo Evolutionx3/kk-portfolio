@@ -40,7 +40,7 @@ body {
     }
 
     .hero_bg_dots, .testimonials {
-        background: url(bg_hero_mobile.png);
+        background: url(/bg_hero_mobile.png);
     }
 
     .nav_gradient {
