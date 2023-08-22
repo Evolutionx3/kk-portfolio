@@ -3,7 +3,7 @@ import React from "react";
 const CarouselNextButton = () => {
   return (
     <div className="flex w-full justify-end -mb-8">
-      <button className="carousel_next">
+      <button className={`carousel_next`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"

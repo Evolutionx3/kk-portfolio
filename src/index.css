@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html {
     font-family: 'Titillium Web', sans-serif;
     color: #F8FAFC;
@@ -105,22 +106,20 @@ body {
         padding-top: 78px;
     }
 
-    .testimonials {
-        @apply px-5 gap-y-9 flex flex-col;
-    }
-
     .testimonials_text {
-        @apply text-typography font-semibold;
+        @apply text-typography font-semibold px-5 mb-20;
         font-size: 2.8125rem;
         line-height: 112%;
-        width: 277px;
+        height: 250px;
+        width: 355px;
     }
 
-    .testimonials_text_featured {
-        background: var(--text-gradient, linear-gradient(90deg, rgba(78, 65, 209, 0.85) 0%, #6659EF 26.04%));
+    blockquote .testimonials_text_featured {
+        background-image: var(--text-gradient, linear-gradient(90deg, rgba(78, 65, 209, 0.85) 0%, #6659EF 26.04%));
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-weight: 700;
     }
 
     .carousel_next {
@@ -130,13 +129,17 @@ body {
     }
     
     .mentors_info_wrapper {
-        @apply -mt-8
+        @apply -ml-8 -mt-12
     }
 
     .mentors_info {
-        @apply -ml-5 flex;
-        width: 186px;
+        @apply flex;
+        width: 200px;
         font-size: 14px;
+    }
+
+    .mentors_info.job {
+        letter-spacing: 0.0175rem;
     }
 
     .mentor_img {
@@ -176,6 +179,11 @@ body {
         @apply pb-10;
         opacity: 0.5
     }
+
+    .swiper-button-prev {
+        top: 10%!important;
+    }
+
 }
 
 

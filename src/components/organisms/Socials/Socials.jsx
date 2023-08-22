@@ -9,8 +9,8 @@ const SocialMedia = [
 
 const Socials = () => {
   return (
-    <div className="socials_wrapper gap-y-9 px-5 pb-16">
-      <SectionTitleWrapper title="Let's Get In Touch" />
+    <div className="socials_wrapper px-5 pb-16">
+      <SectionTitleWrapper additionalClass="mb-9" title="Let's Get In Touch" />
       {SocialMedia.map((social) => (
         <div key={social.id} className="social_button_wrapper py-10">
           <button className="flex social_button gap-x-2">

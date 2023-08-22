@@ -1,10 +1,9 @@
 import React from "react";
 
-const TestimonialsText = () => {
+const TestimonialsText = ({ quote }) => {
   return (
     <h4 className="testimonials_text">
-      "Katarzyna&apos;s skills in UI design are
-      <span className="testimonials_text_featured">really exceptional...</span>"
+      <blockquote dangerouslySetInnerHTML={{ __html: quote }} />
     </h4>
   );
 };
