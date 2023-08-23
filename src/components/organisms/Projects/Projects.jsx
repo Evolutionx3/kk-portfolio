@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "../../molecules/Project/Project";
+import SectionTitleWrapper from "../../molecules/SectionTitleWrapper/SectionTitleWrapper";
 
 const Works = [
   {
@@ -21,6 +22,7 @@ const Works = [
 const Projects = () => {
   return (
     <div className="projects_wrapper">
+      <SectionTitleWrapper title="Selected Works" />
       {Works.map((work) => (
         <Project
           key={work.id}
