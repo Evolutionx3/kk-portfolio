@@ -271,6 +271,16 @@ body {
         letter-spacing: 0.09rem;
       }
 
+      .hero_bg_dots {
+        -webkit-overflow-scrolling: auto!important;
+      }
+
+      .hero_bg_dots, .my_mission_section, .projects_wrapper, .testimonials_wrapper, .socials_wrapper, .back_to_top, .footer-text {
+        transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+      }
+
 }
 
 
