@@ -6,6 +6,7 @@ export default {
       colors: {
         "dark-grey": "#080808",
         typography: "#F8FAFC",
+        violet: "#6659EF",
       },
     },
   },

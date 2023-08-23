@@ -1,20 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
+
+const pages = [
+  {
+    name: "About",
+    link: "#",
+  },
+  {
+    name: "Portfolio",
+    link: "#",
+  },
+  {
+    name: "Contact",
+    link: "#",
+  },
+];
 
 const NavigationHamburger = () => {
+  const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    if (!active) {
+      setActive(true);
+    } else {
+      setActive(false);
+    }
+    console.log(active);
+  };
+
   return (
-    <div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="22"
-        viewBox="0 0 30 22"
-        fill="none"
-      >
-        <path
-          d="M0 0H30V3.66667H0V0ZM0 9.16667H30V12.8333H0V9.16667ZM0 18.3333H30V22H0V18.3333Z"
-          fill="#6659EF"
-        />
-      </svg>
+    <div className="relative" onClick={handleClick}>
+      <div id="nav-icon3" className={`${active ? "open" : ""}`}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      {active && (
+        <div className="menu-mobile">
+          <ul className="flex flex-col gap-y-6">
+            {pages.map((page) => (
+              <li className="menu-item" key={page.name}>
+                {page.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
