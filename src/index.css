@@ -45,7 +45,7 @@ body {
     }
 
     .nav_gradient {
-        background: linear-gradient(180deg, rgba(6, 6, 6, 0.90) 0%, rgba(35, 35, 35, 0.90) 100%);
+        background: linear-gradient(180deg, #060606 0%, rgba(6, 6, 6, 0.88) 100%);
     }
 
     .my_mission_section {
@@ -258,7 +258,7 @@ body {
 
       .menu-mobile {
         @apply absolute -right-4 border-l border-b border-violet p-6;
-        background: linear-gradient(180deg, rgba(6, 6, 6, 0.88) 10.41%, rgba(6, 6, 6, 0.83) 100%);
+        background: linear-gradient(180deg, rgba(6, 6, 6, 0.88) 0%, rgba(6, 6, 6, 0.83) 100%);
         top: 47px;
       }
 
