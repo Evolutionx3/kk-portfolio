@@ -8,7 +8,7 @@ const TestimonialsTextMore = ({ reference }) => {
   };
 
   return (
-    <div className="relative w-fit">
+    <div className="relative w-fit hidden xl:block">
       <p
         className={`testimonials_reference ${
           revealed ? "after:opacity-0" : "after:opacity-100"
