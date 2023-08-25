@@ -19,7 +19,13 @@ body {
         letter-spacing: 0.1225rem;
         line-height: 91.6%;
         -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+        -moz-osx-font-smoothing: grayscale;
+
+        @screen xl {
+            font-size: 12.1075rem;
+            text-shadow: 0px 0.5000012516975403px 6.500016212463379px rgba(13, 9, 24, 0.22);
+            line-height: 91.6%;
+        }
     }
     
     .hero_medium_text {
@@ -32,12 +38,30 @@ body {
     .hero_small_text {
         font-size: 1.0625rem;
         line-height: 122%;
-        padding-left: 5px
+        padding-left: 5px;
+
+        @screen xl {
+            font-size: 2.5rem;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    .hero_wrapper {
+        @apply xl:max-w-screen-xl xl:mx-auto
     }
 
     .hero_slash {
-        font-weight: 400;
-        color: #6659EF
+        @apply inline-block mx-4 -mb-1;
+        width: 5px;
+        height: 70px;
+        background: #6659EF;
+        transform: rotate(15deg);
+
+        @screen xl {
+            height: 138px;
+            width: 10px;
+        }
     }
 
     .hero_bg_dots, .testimonials {
@@ -51,6 +75,14 @@ body {
     .my_mission_section {
         padding: 78px 22px;
         background: linear-gradient(180deg, #F7F7FC 0%, #F5F4F9 60.94%, #E2E2E5 100%);
+
+        @screen xl {
+            padding: 112px 0 152px 0;
+        }
+    }
+
+    .my_mission_wrapper {
+        @apply xl:max-w-screen-xl xl:mx-auto;
     }
 
     .section_title {
@@ -59,27 +91,65 @@ body {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @screen xl {
+            font-size: 1.625rem;
+        }
     }
 
     .my_mission_quote {
-        @apply font-semibold;
+        @apply font-semibold xl:font-bold;
         line-height: 112%;
         font-size: 2.8125rem;
+
+        @screen xl {
+            font-size: 3.9675rem;
+            line-height: 112%;
+        }
     }
 
     .my_mission_text {
-        @apply text-xl;
+        @apply text-xl xl:text-2xl;
         line-height: 122%;
         color: #363639;
         opacity: 0.9;
+
+        @screen xl {
+            line-height: 145%;
+        }
+    }
+
+    .about_desc_wrapper {
+        @apply py-4 px-10;
+        border-radius: 0.0625rem;
+        background: linear-gradient(90deg, rgba(46, 29, 157, 0.24) 0%, rgba(46, 29, 157, 0.60) 11.41%, rgba(46, 29, 157, 0.90) 63.65%, #2E1D9D 100%), #080808;
+    }
+
+    .about_desc_introduction {
+        @apply text-xl capitalize text-typography;
+        line-height: 145%;
+    }
+
+    .about_desc_interests {
+        @apply text-xl capitalize text-typography font-bold;
+        line-height: 120%;
+        letter-spacing: 0.025rem;
+    }
+
+    .projects_container {
+        @apply  py-12 px-5 xl:gap-y-0 w-full;
+        background: linear-gradient(180deg, #141415 0%, #101014 100%);
+
+        @screen xl {
+            padding: 200px 0;
+        }
     }
 
     .projects_wrapper {
-        @apply flex flex-col py-12 gap-y-12 px-5;
-        background: linear-gradient(180deg, #141415 0%, #101014 100%);
+        @apply xl:max-w-screen-xl xl:mx-auto flex flex-col gap-y-12
     }
 
-    .projects_wrapper, .testimonials_wrapper, .socials_wrapper {
+    .projects_container, .testimonials_container, .socials_container {
         @apply z-10 relative
     }
 
@@ -91,31 +161,69 @@ body {
     }
 
     .project {
-        @apply pb-6 border-b;
+        @apply pb-6 border-b xl:pb-0;
         border-color: rgba(248, 250, 252, .13);
     }
 
+    .project:last-child {
+        @screen xl {
+            height: 354.63px;
+        }
+    }
+
     .project_title {
-        @apply font-semibold uppercase;
+        @apply font-semibold uppercase text-typography xl:bg-transparent;
         font-size: 3.25rem;
         line-height: 100%;
-        background: linear-gradient(90deg, rgba(248, 250, 252, 0.90) 0%, #F8FAFC 89.60%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+
+        @screen xl {
+            color: #535353;
+            font-size: 6.19875rem;
+            line-height: 82%;
+            max-width: 800px;
+        }
     }
 
     .testimonials_wrapper, .socials_wrapper {
-        @apply flex flex-col bg-dark-grey;
+        @apply flex flex-col xl:max-w-screen-xl xl:mx-auto;
+    }
+
+    .socials_container, .testimonials_container {
+        @apply bg-dark-grey;
         padding-top: 78px;
+        
     }
 
     .testimonials_text {
-        @apply text-typography font-semibold px-5 mb-20;
+        @apply text-typography font-semibold px-5 mb-20 xl:p-0 xl:m-0;
         font-size: 2.8125rem;
         line-height: 112%;
         height: 250px;
         width: 355px;
+
+        @screen xl {
+            font-size: 3.9675rem;
+            font-weight: bold;
+            width: 900px;
+            height: auto;
+        }
+    }
+
+    .testimonials_reference {
+        @apply text-xl xl:block hidden relative;
+        color: #9F9F9F;
+        line-height: 145%;
+        width: 760px;
+    }
+
+    .testimonials_reference::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(180deg, rgba(8, 8, 8, 0.00) 30%, rgba(8, 8, 8, 0.91) 55.94%, #080808 90.36%);
     }
 
     blockquote .testimonials_text_featured {
@@ -133,17 +241,27 @@ body {
     }
     
     .mentors_info_wrapper {
-        @apply -ml-8 -mt-12
+        @apply -ml-8 -mt-12 xl:m-0 xl:py-4 xl:px-10;
+        @screen xl {
+            border-radius: 0.0625rem;
+            background: var(--gradient, linear-gradient(90deg, rgba(46, 29, 157, 0.24) 0%, rgba(46, 29, 157, 0.60) 11.41%, rgba(46, 29, 157, 0.90) 63.65%, #2E1D9D 100%));
+        }
     }
 
     .mentors_info {
-        @apply flex;
-        width: 200px;
-        font-size: 14px;
+        @apply flex w-48 xl:w-full xl:text-lg text-sm;
+
+        @screen xl {
+            line-height: 145%;
+        }
     }
 
     .mentors_info.job {
         letter-spacing: 0.0175rem;
+
+        @screen xl {
+            line-height: 120%;
+        }
     }
 
     .mentor_img {
@@ -171,6 +289,10 @@ body {
         opacity: 0.85;
         font-size: 3.325rem;
         line-height: 82%;
+
+        @screen xl {
+            font-size: 6.19875rem;
+        }
     }
 
     .footer-text {
@@ -267,7 +389,7 @@ body {
       }
 
       .menu-item {
-        @apply text-right uppercase font-semibold text-lg text-typography;
+        @apply text-right uppercase font-semibold text-lg text-typography xl:text-dark-typography xl:text-base;
         letter-spacing: 0.09rem;
       }
 
@@ -275,7 +397,7 @@ body {
         -webkit-overflow-scrolling: auto!important;
       }
 
-      .hero_bg_dots, .my_mission_section, .projects_wrapper, .testimonials_wrapper, .socials_wrapper, .back_to_top, .footer-text {
+      .hero_bg_dots, .my_mission_section, .projects_container, .testimonials_container, .socials_container, .back_to_top, .footer-text {
         transform: translate3d(0,0,0);
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);

@@ -10,7 +10,7 @@ import Footer from "./components/organisms/Footer/Footer";
 
 function App() {
   return (
-    <>
+    <div className="mx-auto">
       <Navigation />
       <Hero />
       <Mission />
@@ -19,7 +19,7 @@ function App() {
       <Socials />
       <BackToTop />
       <Footer />
-    </>
+    </div>
   );
 }
 

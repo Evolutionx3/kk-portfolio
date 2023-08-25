@@ -30,8 +30,19 @@ export const swiperStyles = [
     background-repeat: no-repeat;
     background-position: center;
   }
-  .swiper-button-disabled {
-    display: none;
+
+  @media only screen and (min-width: 1280px) {
+    .swiper-button-next, .swiper-button-prev {
+      margin-top: -80px;
+    }
+
+    .swiper-button-next {
+      right: 0;
+    }
+
+    .swiper-button-prev {
+      right: 72px;
+    }
   }
 `,
 ];

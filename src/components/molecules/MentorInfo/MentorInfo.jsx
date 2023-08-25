@@ -2,9 +2,9 @@ import React from "react";
 
 const MentorInfo = ({ name, job, company, img }) => {
   return (
-    <div className="flex items-center">
-      <div className="w-screen">
-        <img className="mentor_img" src={img} />
+    <div className="flex xl:flex-col items-center">
+      <div className="w-screen xl:w-full">
+        <img className="mentor_img xl:mx-auto" src={img} />
       </div>
       <div className="mentors_info_wrapper">
         <p className="mentors_info">{name}</p>

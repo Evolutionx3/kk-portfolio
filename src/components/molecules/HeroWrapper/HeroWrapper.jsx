@@ -5,11 +5,14 @@ import HeroBigText from "../../atoms/HeroBigText/HeroBigText";
 
 const HeroWrapper = () => {
   return (
-    <div>
+    <div className="hero_wrapper">
       <HeroSmallText text="Hi, I'm Kasia" />
       <HeroBigText />
       <HeroMediumText />
-      <HeroSmallText text="Smooth UX Crafted into Delightful Interactions" />
+      <HeroSmallText
+        additionalClass="xl:opacity-40"
+        text="Smooth UX Crafted into Delightful Interactions"
+      />
     </div>
   );
 };

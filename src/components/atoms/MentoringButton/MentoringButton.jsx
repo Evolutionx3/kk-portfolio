@@ -2,7 +2,7 @@ import React from "react";
 
 const MentoringButton = () => {
   return (
-    <div className="mentoring_button_wrapper">
+    <div className="mentoring_button_wrapper xl:hidden">
       <div className="py-10 px-5">
         <button className="flex mentoring_button">
           Read References{" "}
