@@ -9,6 +9,9 @@ export default {
         violet: "#6659EF",
         "dark-typography": "#5C5D5E",
       },
+      screens: {
+        laptop: { min: "1024px", max: "1366px" },
+      },
     },
   },
   plugins: [],

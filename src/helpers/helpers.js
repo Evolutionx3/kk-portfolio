@@ -31,6 +31,13 @@ export const swiperStyles = [
     background-position: center;
   }
 
+  @media only screen and (min-width:1280px) and (max-width:1366px) {
+    .swiper-button-next, .swiper-button-prev {
+      width: 37px;
+      height: 53px;
+    }
+  }
+
   @media only screen and (min-width: 1280px) {
     .swiper-button-next, .swiper-button-prev {
       margin-top: -80px;

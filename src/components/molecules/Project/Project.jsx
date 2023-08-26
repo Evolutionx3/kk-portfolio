@@ -11,7 +11,7 @@ const Project = ({ badge, title, desktopTitle, img }) => {
         <ProjectImage img={img} />
         <ProjectBadge badge={badge} />
       </div>
-      <div className="py-4 xl:py-24 flex items-center xl:items-start justify-between">
+      <div className="py-4 xl:py-24 laptop:py-16 flex items-center xl:items-start justify-between">
         <ProjectTitle title={title} desktopTitle={desktopTitle} />
         <div>
           <RightArrow />

@@ -28,6 +28,7 @@ const Socials = () => {
                   height="87"
                   viewBox="0 0 68 87"
                   fill="none"
+                  className="laptop:w-16 laptop:h-16"
                 >
                   <g clipPath="url(#clip0_888_4403)">
                     <path

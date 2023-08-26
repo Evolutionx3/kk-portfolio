@@ -27,7 +27,10 @@ const MissionTextWrapper = () => {
         />
       </div>
       <div className="hidden xl:w-1/4 xl:flex xl:flex-col">
-        <img src="kasia.png" className="w-80 inline-block align-bottom" />
+        <img
+          src="kasia.png"
+          className="w-80 laptop:w-64 inline-block align-bottom"
+        />
         <div className="about_desc_wrapper">
           <p className="about_desc_introduction">Hi, I'm Kasia Klima</p>
           <p className="about_desc_interests">

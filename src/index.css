@@ -26,6 +26,10 @@ body {
             text-shadow: 0px 0.5000012516975403px 6.500016212463379px rgba(13, 9, 24, 0.22);
             line-height: 91.6%;
         }
+
+        @screen laptop {
+            font-size: 8.614rem;
+        }
     }
     
     .hero_medium_text {
@@ -45,10 +49,14 @@ body {
             font-weight: 300;
             line-height: normal;
         }
+
+        @screen laptop {
+            font-size: 1.77863rem;
+        }
     }
 
     .hero_wrapper {
-        @apply xl:max-w-screen-xl xl:mx-auto
+        @apply xl:max-w-screen-xl xl:mx-auto xl:w-full laptop:px-24
     }
 
     .hero_slash {
@@ -61,6 +69,11 @@ body {
         @screen xl {
             height: 138px;
             width: 10px;
+        }
+
+        @screen laptop {
+            height: 98px;
+            width: 7px;
         }
     }
 
@@ -79,10 +92,14 @@ body {
         @screen xl {
             padding: 112px 0 152px 0;
         }
+
+        @screen laptop {
+            padding: 79px 0 108px 0;
+        }
     }
 
     .my_mission_wrapper {
-        @apply xl:max-w-screen-xl xl:mx-auto;
+        @apply xl:max-w-screen-xl xl:mx-auto laptop:px-24;
     }
 
     .section_title {
@@ -95,6 +112,10 @@ body {
         @screen xl {
             font-size: 1.625rem;
         }
+
+        @screen laptop {
+            font-size: 1.25rem;
+        }
     }
 
     .my_mission_quote {
@@ -106,10 +127,14 @@ body {
             font-size: 3.9675rem;
             line-height: 112%;
         }
+
+        @screen laptop {
+            font-size: 3.2226rem;
+        }
     }
 
     .my_mission_text {
-        @apply text-xl xl:text-2xl;
+        @apply text-xl xl:text-2xl laptop:text-xl;
         line-height: 122%;
         color: #363639;
         opacity: 0.9;
@@ -117,6 +142,7 @@ body {
         @screen xl {
             line-height: 145%;
         }
+
     }
 
     .about_desc_wrapper {
@@ -126,12 +152,12 @@ body {
     }
 
     .about_desc_introduction {
-        @apply text-xl capitalize text-typography;
+        @apply text-xl capitalize text-typography laptop:text-base;
         line-height: 145%;
     }
 
     .about_desc_interests {
-        @apply text-xl capitalize text-typography font-bold;
+        @apply text-xl capitalize text-typography font-bold laptop:text-base;
         line-height: 120%;
         letter-spacing: 0.025rem;
     }
@@ -143,10 +169,14 @@ body {
         @screen xl {
             padding: 200px 0;
         }
+
+        @screen laptop {
+            padding: 140px 0;
+        }
     }
 
     .projects_wrapper {
-        @apply xl:max-w-screen-xl xl:mx-auto flex flex-col gap-y-12
+        @apply xl:max-w-screen-xl xl:mx-auto laptop:px-24 flex flex-col gap-y-12 xl:gap-y-0
     }
 
     .projects_container, .testimonials_container, .socials_container {
@@ -165,11 +195,12 @@ body {
         border-color: rgba(248, 250, 252, .13);
     }
 
-    .project:last-child {
+    /* .project:last-child {
         @screen xl {
             height: 354.63px;
         }
-    }
+
+    } */
 
     .project_title {
         @apply font-semibold uppercase text-typography xl:bg-transparent;
@@ -182,15 +213,24 @@ body {
             line-height: 82%;
             max-width: 800px;
         }
+
+        @screen xl {
+            font-size: 4.5rem;
+            max-width: 550px;
+        }
     }
 
     .testimonials_wrapper, .socials_wrapper {
-        @apply flex flex-col xl:max-w-screen-xl xl:mx-auto;
+        @apply flex flex-col xl:max-w-screen-xl xl:mx-auto laptop:px-24;
     }
 
     .socials_container, .testimonials_container {
         @apply bg-dark-grey;
         padding-top: 78px;
+
+        @screen laptop {
+            padding-top: 70px;
+        }
         
     }
 
@@ -207,13 +247,22 @@ body {
             width: 900px;
             height: auto;
         }
+
+        @screen laptop {
+            font-size: 3.22269rem;
+            width: 720px;
+        }
     }
 
     .testimonials_reference {
-        @apply text-xl xl:block hidden relative;
+        @apply text-xl xl:block laptop:text-lg hidden relative;
         color: #9F9F9F;
         line-height: 145%;
         width: 760px;
+
+        @screen laptop {
+            width: 700px;
+        }
     }
 
     .testimonials_reference::after {
@@ -234,11 +283,6 @@ body {
         font-weight: 700;
     }
 
-    .carousel_next {
-        @apply w-10 h-16 flex justify-center items-center;
-        border-radius: 0.09094rem;
-        background: linear-gradient(90deg, rgba(46, 29, 157, 0.22) 0%, rgba(46, 29, 157, 0.83) 57.44%, #2E1D9D 100%);
-    }
     
     .mentors_info_wrapper {
         @apply -ml-8 -mt-12 xl:m-0 xl:py-4 xl:px-10;
@@ -249,7 +293,7 @@ body {
     }
 
     .mentors_info {
-        @apply flex w-48 xl:w-full xl:text-lg text-sm;
+        @apply flex w-48 xl:w-full xl:text-lg laptop:text-base text-sm;
 
         @screen xl {
             line-height: 145%;
@@ -292,6 +336,10 @@ body {
 
         @screen xl {
             font-size: 6.19875rem;
+        }
+
+        @screen laptop {
+            font-size: 4.41013rem;
         }
     }
 
@@ -389,7 +437,7 @@ body {
       }
 
       .menu-item {
-        @apply text-right uppercase font-semibold text-lg text-typography xl:text-dark-typography xl:text-base;
+        @apply text-right uppercase font-semibold text-lg text-typography laptop:text-sm xl:text-dark-typography xl:text-base;
         letter-spacing: 0.09rem;
       }
 
