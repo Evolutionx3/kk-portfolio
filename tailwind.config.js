@@ -11,6 +11,7 @@ export default {
       },
       screens: {
         laptop: { min: "1024px", max: "1366px" },
+        md: { min: "767px", max: "1279px" },
       },
     },
   },

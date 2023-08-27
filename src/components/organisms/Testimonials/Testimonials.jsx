@@ -20,6 +20,9 @@ const Mentors = [
     quote:
       `"Katarzyna's skills in UI design are
   <span class="testimonials_text_featured">really exceptional...</span>` + '"',
+    quoteMobile:
+      `"Katarzyna's skills in UI design are
+  <span class="testimonials_text_featured">really exceptional...</span>` + '"',
     reference: `Katarzyna and I had two sessions together to review her portfolio. She took the feedback I provided into account, was very proactive, and applied it. Additionally, I think Katarzyna's skills in UI design are really exceptional, she has a great eye for it and applies a lot of best practices to her work.`,
   },
   {
@@ -32,6 +35,10 @@ const Mentors = [
       `"She's curious,
   <span class="testimonials_text_featured">detail oriented</span>` +
       ' and hard working..."',
+    quoteMobile:
+      `"She's curious,
+      <span class="testimonials_text_featured">detail oriented</span>` +
+      ' and hard working..."',
   },
   {
     id: 3,
@@ -41,7 +48,10 @@ const Mentors = [
     img: "tobiasz.png",
     quote:
       `"<span class="testimonials_text_featured">Brimming with passion</span>` +
-      ' and commitment <br/>for her craft..."',
+      ' and commitment for her craft..."',
+    quoteMobile:
+      `"<span class="testimonials_text_featured">Brimming with passion</span>` +
+      ' and commitment<br/>for her craft..."',
   },
 ];
 
@@ -73,7 +83,10 @@ const Testimonials = () => {
               <swiper-slide key={mentor.id}>
                 <div className="xl:flex xl:gap-x-8 xl:w-full">
                   <div className="flex flex-col xl:gap-y-6">
-                    <TestimonialsText quote={mentor.quote} />
+                    <TestimonialsText
+                      quoteMobile={mentor.quoteMobile}
+                      quote={mentor.quote}
+                    />
                     <TestimonialsTextMore reference={mentor.reference} />
                   </div>
                   {/* <CarouselNextButton /> */}

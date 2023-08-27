@@ -3,7 +3,7 @@ import React from "react";
 const MentorInfo = ({ name, job, company, img }) => {
   return (
     <div className="flex xl:flex-col items-center">
-      <div className="w-screen xl:w-full">
+      <div className="w-screen md:w-auto xl:w-full">
         <img className="mentor_img xl:mx-auto" src={img} />
       </div>
       <div className="mentors_info_wrapper">

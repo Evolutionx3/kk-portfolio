@@ -4,7 +4,7 @@ import NavigationHamburger from "../../molecules/NavigationHamburger/NavigationH
 
 const Navigation = () => {
   return (
-    <div className="fixed z-20 top-0 left-0 laptop:px-9 laptop:py-9 xl:px-14 xl:py-14 w-full nav_gradient xl:bg-none">
+    <div className="fixed z-20 top-0 left-0 p-4 laptop:px-9 laptop:py-9 xl:px-14 xl:py-14 w-full nav_gradient xl:bg-none">
       <div className="xl:mx-auto flex justify-between">
         <NavigationLogo />
         <NavigationHamburger />

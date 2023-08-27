@@ -30,6 +30,10 @@ body {
         @screen laptop {
             font-size: 8.614rem;
         }
+
+        @screen md {
+            font-size: 8rem;
+        }
     }
     
     .hero_medium_text {
@@ -37,6 +41,10 @@ body {
         font-size: 4.625rem;
         letter-spacing: 0.0925rem;
         line-height: 91.6%;
+
+        @screen md {
+            font-size: 6rem;
+        }
     }
     
     .hero_small_text {
@@ -53,10 +61,14 @@ body {
         @screen laptop {
             font-size: 1.77863rem;
         }
+
+        @screen md {
+            font-size: 1.25rem;
+        }
     }
 
     .hero_wrapper {
-        @apply xl:max-w-screen-xl xl:mx-auto xl:w-full laptop:px-24
+        @apply md:px-14 xl:max-w-screen-xl xl:mx-auto xl:w-full laptop:px-24
     }
 
     .hero_slash {
@@ -74,6 +86,10 @@ body {
         @screen laptop {
             height: 98px;
             width: 7px;
+        }
+
+        @screen md {
+            height: 95px;
         }
     }
 
@@ -96,10 +112,11 @@ body {
         @screen laptop {
             padding: 79px 0 108px 0;
         }
+
     }
 
     .my_mission_wrapper {
-        @apply xl:max-w-screen-xl xl:mx-auto laptop:px-24;
+        @apply md:px-14 xl:max-w-screen-xl xl:mx-auto laptop:px-24;
     }
 
     .section_title {
@@ -176,7 +193,7 @@ body {
     }
 
     .projects_wrapper {
-        @apply xl:max-w-screen-xl xl:mx-auto laptop:px-24 flex flex-col gap-y-12 xl:gap-y-0
+        @apply md:px-14 laptop:px-24 flex flex-col gap-y-12 xl:gap-y-0
     }
 
     .projects_container, .testimonials_container, .socials_container {
@@ -192,15 +209,10 @@ body {
 
     .project {
         @apply pb-6 border-b xl:pb-0;
-        border-color: rgba(248, 250, 252, .13);
+        border-image-slice: 1;
+        border-image-source: radial-gradient(circle, rgba(51,51,54,1) 45%, rgba(51,51,54,0) 90%);
     }
 
-    /* .project:last-child {
-        @screen xl {
-            height: 354.63px;
-        }
-
-    } */
 
     .project_title {
         @apply font-semibold uppercase text-typography xl:bg-transparent;
@@ -214,14 +226,14 @@ body {
             max-width: 800px;
         }
 
-        @screen xl {
+        @screen laptop {
             font-size: 4.5rem;
             max-width: 550px;
         }
     }
 
     .testimonials_wrapper, .socials_wrapper {
-        @apply flex flex-col xl:max-w-screen-xl xl:mx-auto laptop:px-24;
+        @apply flex flex-col md:px-14 xl:max-w-screen-xl xl:mx-auto laptop:px-24;
     }
 
     .socials_container, .testimonials_container {
@@ -230,6 +242,10 @@ body {
 
         @screen laptop {
             padding-top: 70px;
+        }
+
+        @screen xl {
+            padding: 112px 0;
         }
         
     }
@@ -251,6 +267,11 @@ body {
         @screen laptop {
             font-size: 3.22269rem;
             width: 720px;
+        }
+
+        @screen md {
+            width: 100%;
+            height: auto;
         }
     }
 
@@ -285,7 +306,7 @@ body {
 
     
     .mentors_info_wrapper {
-        @apply -ml-8 -mt-12 xl:m-0 xl:py-4 xl:px-10;
+        @apply -ml-8 -mt-12 md:mt-0 md:ml-0 xl:m-0 xl:py-4 xl:px-10;
         @screen xl {
             border-radius: 0.0625rem;
             background: var(--gradient, linear-gradient(90deg, rgba(46, 29, 157, 0.24) 0%, rgba(46, 29, 157, 0.60) 11.41%, rgba(46, 29, 157, 0.90) 63.65%, #2E1D9D 100%));
@@ -293,7 +314,7 @@ body {
     }
 
     .mentors_info {
-        @apply flex w-48 xl:w-full xl:text-lg laptop:text-base text-sm;
+        @apply flex w-48 md:w-full xl:w-full xl:text-lg laptop:text-base text-sm;
 
         @screen xl {
             line-height: 145%;
@@ -325,7 +346,8 @@ body {
 
     .social_button_wrapper {
         @apply border-b;
-        border-bottom-color: #fcfcfc2b;
+        border-image-slice: 1;
+        border-image-source: radial-gradient(circle, rgba(51,51,54,1) 90%, rgba(51,51,54,0) 100%);
     }
 
     .social_button {
@@ -449,6 +471,24 @@ body {
         transform: translate3d(0,0,0);
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
+      }
+
+      .section_slash {
+        @apply inline-block ml-1.5 mr-1 laptop:-mb-1 xl:-mb-1.5;
+        width: 3px;
+        height: 50px;
+        background: #6659EF;
+        transform: rotate(15deg);
+
+        @screen xl {
+            height: 103.49px;
+            width: 4px;
+        }
+
+        @screen laptop {
+            height: 73.63px;
+            width: 3px;
+        }
       }
 
 }

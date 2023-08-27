@@ -6,7 +6,7 @@ const SectionTitleWrapper = ({ title, additionalClass }) => {
   return (
     <div
       className={`flex items-end gap-x-2 ${
-        additionalClass ? "additionalClass" : ""
+        additionalClass ? additionalClass : ""
       } xl:mb-24 laptop:mb-16 xl:-ml-6`}
     >
       <SlashIcon />

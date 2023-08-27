@@ -37,7 +37,9 @@ const Projects = () => {
   return (
     <div className="projects_container">
       <div className="projects_wrapper">
-        <SectionTitleWrapper title="Selected Works" />
+        <div className="xl:max-w-screen-xl xl:w-full xl:mx-auto">
+          <SectionTitleWrapper title="Selected Works" />
+        </div>
         {Works.map((work) => (
           <Project
             key={work.id}
