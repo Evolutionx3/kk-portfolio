@@ -1,24 +1,11 @@
-import { useState } from "react";
-import Navigation from "./components/organisms/Navigation/Navigation";
-import Hero from "./components/organisms/Hero/Hero";
-import Mission from "./components/organisms/Mission/Mission";
-import Projects from "./components/organisms/Projects/Projects";
-import Testimonials from "./components/organisms/Testimonials/Testimonials";
-import Socials from "./components/organisms/Socials/Socials";
-import BackToTop from "./components/molecules/BackToTop/BackToTop";
-import Footer from "./components/organisms/Footer/Footer";
+import MainTemplate from "./components/template/MainTemplate";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="mx-auto">
-      <Navigation />
-      <Hero />
-      <Mission />
-      <Projects />
-      <Testimonials />
-      <Socials />
-      <Footer />
-    </div>
+    <MainTemplate>
+      <Home />
+    </MainTemplate>
   );
 }
 

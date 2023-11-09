@@ -1,40 +1,7 @@
 import React from "react";
 import Project from "../../molecules/Project/Project";
 import SectionTitleWrapper from "../../molecules/SectionTitleWrapper/SectionTitleWrapper";
-
-const Works = [
-  {
-    id: 1,
-    title: "Gym App Redesign",
-    desktopTop: "Gym App",
-    desktopBottom: "Redesign",
-    badge: "iOS App Design",
-    img: "gym_app",
-  },
-  {
-    id: 2,
-    title: "Evisa Assistance Platform",
-    desktopTop: "Evisa",
-    desktopBottom: "Assistance",
-    badge: "Case Study",
-    img: "evisa",
-  },
-  {
-    id: 3,
-    title: "OSK4U One-Page",
-    desktopTop: "Driving School",
-    desktopBottom: "Landing Page",
-    badge: "Case Study",
-    img: "osk4u",
-  },
-  {
-    id: 4,
-    title: "Taxi One-Page",
-    desktopTop: "Taxi One-Page",
-    badge: "Case Study",
-    img: "taxi",
-  },
-];
+import { Works } from "../../../data/data";
 
 const Projects = () => {
   return (

@@ -1,12 +1,7 @@
 import React from "react";
 import SectionTitleWrapper from "../../molecules/SectionTitleWrapper/SectionTitleWrapper";
 import useWindowSize from "../../../hooks/useWindowSize";
-
-const SocialMedia = [
-  { id: 1, title: "Linked In", link: "#" },
-  { id: 2, title: "Behance", link: "#" },
-  { id: 3, title: "Email", link: "#" },
-];
+import { SocialMedia } from "../../../data/data";
 
 const Socials = () => {
   const windowSize = useWindowSize();
