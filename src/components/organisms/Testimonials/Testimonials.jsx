@@ -39,6 +39,7 @@ const Mentors = [
       `"She's curious,
       <span class="testimonials_text_featured">detail oriented</span>` +
       ' and hard working..."',
+    reference: `Kasia is a solid candidate, with great communication skills. She's curious, detail-oriented and hard working. During each mentorship session she's always well prepared and focused, she's aware of her strengths and weaknesses. Her proactive approach, openness to feedback and eagerness to learn UX and UI design deserves huge applause. It's pleasure to support Kasia and be part of her professional growth :)`,
   },
   {
     id: 3,
@@ -52,6 +53,7 @@ const Mentors = [
     quoteMobile:
       `"<span class="testimonials_text_featured">Brimming with passion</span>` +
       ' and commitment<br/>for her craft..."',
+    reference: `Kasia is a talented and aspiring young designer, brimming with passion and commitment for her craft. Throughout our mentoring sessions, she showcased not only her aptitude for incorporating feedback but also her ability to challenge it, consistently pushing the boundaries of project quality. Collaborating with Kasia during these mentoring sessions was an absolute delight.`,
   },
 ];
 

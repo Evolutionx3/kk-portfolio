@@ -17,7 +17,6 @@ function App() {
       <Projects />
       <Testimonials />
       <Socials />
-      <BackToTop />
       <Footer />
     </div>
   );

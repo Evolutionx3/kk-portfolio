@@ -93,7 +93,7 @@ body {
         }
     }
 
-    .hero_bg_dots, .testimonials {
+    .hero_bg_dots, .testimonials_container {
         background: url(/bg_hero_mobile.png);
     }
 
@@ -156,9 +156,6 @@ body {
         color: #363639;
         opacity: 0.9;
 
-        @screen xl {
-            line-height: 145%;
-        }
 
     }
 
@@ -166,6 +163,10 @@ body {
         @apply py-4 px-10;
         border-radius: 0.0625rem;
         background: linear-gradient(90deg, rgba(46, 29, 157, 0.24) 0%, rgba(46, 29, 157, 0.60) 11.41%, rgba(46, 29, 157, 0.90) 63.65%, #2E1D9D 100%), #080808;
+
+        @screen xl {
+            min-width: 350px;
+        }
     }
 
     .about_desc_introduction {
@@ -220,10 +221,9 @@ body {
         line-height: 100%;
 
         @screen xl {
-            color: #535353;
+            color: #626262;
             font-size: 6.19875rem;
             line-height: 82%;
-            max-width: 800px;
         }
 
         @screen laptop {
@@ -366,14 +366,13 @@ body {
     }
 
     .footer-text {
-        @apply uppercase text-center py-4;
+        @apply uppercase text-center py-4 bg-dark-grey;
         font-size: 0.75rem;
         color: #535353;
     }
 
     .back_to_top {
-        @apply pb-10;
-        opacity: 0.5
+        @apply pb-10 bg-dark-grey;
     }
 
     .swiper-button-prev {
@@ -459,7 +458,7 @@ body {
       }
 
       .menu-item {
-        @apply text-right uppercase font-semibold text-lg text-typography laptop:text-sm xl:text-dark-typography xl:text-base;
+        @apply text-right uppercase font-semibold text-lg text-typography laptop:text-sm xl:text-dark-typography xl:text-base cursor-pointer relative transition-all w-fit duration-500 before:w-0 before:h-px before:absolute before:bottom-0 before:right-0 before:bg-typography before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:before:bg-typography hover:text-typography;
         letter-spacing: 0.09rem;
       }
 
